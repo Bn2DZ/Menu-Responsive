@@ -1,0 +1,61 @@
+@import "compass";
+
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+$header-bg:#303f9f;
+
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+html, body{
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.4;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+a{ text-decoration: none; color:inherit; }
+.container{
+    margin: 0 20px;
+    @include clearfix;
+}
+.site-content{ padding-top: 66px; }
+
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
+.header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 66px;
+
+    line-height: 66px;
+    color:#FFF;
+
+    background-color: $header-bg;
+}
+
+.header__logo{
+    font-weight: bold;
+    padding: 0 25px;
+    float: left;
+}
+
+/*------------------------------------*\
+    $MENU
+\*------------------------------------*/
+.menu{
+    float: left;
+    a{ padding: 0 10px; }
+    a:hover{ color:#c6ff00; }
+}
+
+
+/*------------------------------------*\
+    $RESPONSIVE
+\*------------------------------------*/
+@import "responsive";
